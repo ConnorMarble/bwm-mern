@@ -1,7 +1,7 @@
 import React from "react";
 import Spinner from "../shared/Spinner";
 import { uploadImage } from "../../actions";
-import { blobToFile, getCroppedImg } from "../..//helpers/functions";
+import { blobToFile, getCroppedImg } from "../../helpers/functions";
 import ImageCrop from "./ImageCrop";
 import "./FileLoader.scss";
 
