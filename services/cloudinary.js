@@ -1,12 +1,11 @@
+const cloudinary = require("cloudinary").v2;
+const dotenv = require("dotenv");
+dotenv.config();
 
-const cloudinary = require('cloudinary').v2;
-const config = require('../config');
-
-cloudinary.config({ 
-  cloud_name: config.CLOUDINARY_NAME, 
-  api_key: config.CLOUDINARY_KEY, 
-  api_secret: config.CLOUDINARY_SECRET 
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_KEY,
+  api_secret: process.env.CLOUDINARY_SECRET,
 });
 
-exports.cloudUpload = file => cloudinary.uploader.upload(file)
-
+exports.cloudUpload = (file) => cloudinary.uploader.upload(file);
