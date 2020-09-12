@@ -57,9 +57,6 @@ app.use("/api/v1/image-upload", imageUploadRoutes);
 //   });
 // }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
 app.listen(PORT, () => {
   console.log("Server is listening on port: ", PORT);
 });
