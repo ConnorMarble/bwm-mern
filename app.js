@@ -56,9 +56,7 @@ app.use("/api/v1/image-upload", imageUploadRoutes);
 //     return res.sendFile(path.resolve(buildPath, "index.html"));
 //   });
 // }
-if (a === b) {
-  return;
-}
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
