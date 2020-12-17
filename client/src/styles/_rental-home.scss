@@ -8,6 +8,10 @@
   .bwm-card {
     border: none;
 
+    .card-img-top {
+      max-height: 220px;
+    }
+
     .card-body {
       padding: 8px 2px;
 
@@ -31,4 +35,4 @@
       }
     }
   }
-} 
+}
